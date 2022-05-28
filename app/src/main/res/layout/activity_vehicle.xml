@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/veh_bacgrounds"
+    tools:context=".Vehicle_Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:text=" Custem your vehicle "
+        android:textColor="@color/theme_color_text_button"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/buttonADDveh"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/theme_button"
+        android:fontFamily="@font/lato_bold"
+        android:text=" save my vehicle"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/theme_color_text_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtVEHName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_round"
+        android:drawableStart="@drawable/custem_car"
+        android:drawablePadding="12dp"
+        android:elevation="0dp"
+        android:ems="10"
+        android:hint="Vehicle name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <EditText
+        android:id="@+id/edtVEHnumber"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_round"
+        android:drawableStart="@drawable/custem_phone_icon"
+        android:drawablePadding="12dp"
+        android:elevation="0dp"
+        android:ems="10"
+        android:hint="Number code"
+        android:inputType="phone"
+        android:padding="15dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textGENvehQr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Generate QR code of your vehicle  "
+        android:textColor="@color/theme_color_text_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <EditText
+        android:id="@+id/edtVEHMatricul"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_round"
+        android:drawableStart="@drawable/custem_account"
+        android:drawablePadding="12dp"
+        android:elevation="0dp"
+        android:ems="10"
+        android:hint="Matricule code"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <Button
+        android:id="@+id/buttonqr"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/theme_button"
+        android:fontFamily="@font/lato_bold"
+        android:text=" QR scaner"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/theme_color_text_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

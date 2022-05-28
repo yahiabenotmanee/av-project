@@ -90,8 +90,7 @@ public class GLocation_Activity extends AppCompatActivity {
         mylocation00 = findViewById(R.id.textView5location);
         mylocation01 = findViewById(R.id.textView5);
 
-        messtext=findViewById(R.id.textViewmessage);
-        numbertext=findViewById(R.id.textView7);
+
 
         // inti fused
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
@@ -212,7 +211,6 @@ public class GLocation_Activity extends AppCompatActivity {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-
 
         fusedLocationProviderClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
             @Override

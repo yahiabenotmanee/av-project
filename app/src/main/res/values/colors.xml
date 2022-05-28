@@ -16,6 +16,7 @@
     <color name="theme_color">#264BFE</color>
     <color name="theme_color_light">#92A5FF</color>
     <color name="theme_color_text_button">#3967D6</color>
+    <color name="theme_color_vehicle">#407BFF</color>
     <color name="edit_text_background">@android:color/white</color>
 
 

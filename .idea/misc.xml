@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable-v24/ic_baseline_fingerprint.xml" value="0.1655" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.222" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable-v24/theme_button.xml" value="0.2665" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/bachground_cycle.xml" value="0.227" />
@@ -17,6 +18,7 @@
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/blue.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/cader.xml" value="0.222" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/custem_account.xml" value="0.227" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/custem_car.xml" value="0.212" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/custem_input.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/custem_lock_icon.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/custem_phone_icon.xml" value="0.227" />
@@ -26,6 +28,10 @@
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/grocery_img_background.xml" value="0.222" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_account_circle.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_account_circle_fucos.xml" value="0.227" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_baseline_directions_car_24.xml" value="0.212" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_baseline_directions_car_focus24.xml" value="0.212" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_car_24.xml" value="0.2775" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_car_focus24.xml" value="0.2775" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_email_24.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_email_focus.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/ic_launcher_background.xml" value="0.222" />
@@ -37,13 +43,16 @@
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/top_background.xml" value="0.2665" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/drawable/transport_ing_background.xml" value="0.227" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_alarm.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_fingerprint.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_glocation.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_location.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_main2.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_note.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_qrcode.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_sign_in.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Yahia Benotmane/AndroidStudioProjects/test/AV project01/app/src/main/res/layout/activity_vehicle.xml" value="0.2682291666666667" />
         <entry key="..\:/Users/Yahia Benotmane/Downloads/Modern-Dashbord-Android-UI-Design-main/Modern-Dashbord-Android-UI-Design-main/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
       </map>

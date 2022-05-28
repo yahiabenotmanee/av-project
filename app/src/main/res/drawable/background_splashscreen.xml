@@ -5,5 +5,9 @@
         <bitmap android:gravity="center"
             android:src="@drawable/ay_logo"/>
     </item>
+    <!--item>
+        <bitmap android:gravity="bottom"
+            android:src="@drawable/ay_logo"/>
+    </item-->
 
 </layer-list>

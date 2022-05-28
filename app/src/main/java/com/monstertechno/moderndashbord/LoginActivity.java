@@ -45,6 +45,8 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
 
         //status bar color
         getWindow().setStatusBarColor(ContextCompat.getColor(LoginActivity.this,R.color.theme_color));
@@ -89,15 +91,16 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher {
 /////////////////////////////////////////////////////////////////////////////////////////////////
                 txtLogEmal = editTextemail.getText().toString();
                 txtLogpassword=editTextpass.getText().toString();
+//                Intent intent =new Intent(LoginActivity.this,MainActivity.class);
+//                startActivity(intent);
+//                finish();
 
                 if (!TextUtils.isEmpty(txtLogEmal)){
                     if (txtLogEmal.matches(Emailpattern)){
                         if (!TextUtils.isEmpty(txtLogpassword)){
 
-                           // SignInUser();
-                            Intent intent =new Intent(LoginActivity.this,MainActivity.class);
-                            startActivity(intent);
-                            finish();
+                           SignInUser();
+
 
                         }else {editTextpass.setError(" Password  can't be empty !");}
 
@@ -108,23 +111,25 @@ public class LoginActivity extends AppCompatActivity implements TextWatcher {
             }
         });
     }
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    protected void SignInUser() {
+
+    private void SignInUser() {
         progressBar.setVisibility(View.VISIBLE);
         buttonlogin.setVisibility(View.INVISIBLE);
-        mAuth.signInWithEmailAndPassword(editTextemail.getText().toString(),editTextpass.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+        mAuth.signInWithEmailAndPassword(txtLogEmal,txtLogpassword).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                Toast.makeText(LoginActivity.this, "Login Successful ", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(LoginActivity.this,MainActivity.class);
+                Toast.makeText(LoginActivity.this, "Login Successfuly ", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(LoginActivity.this, "Error"+ e.getMessage() , Toast.LENGTH_SHORT).show();
-            buttonlogin.setVisibility(View.VISIBLE);
+
+                Toast.makeText(LoginActivity.this, "Error"+e.getMessage(), Toast.LENGTH_SHORT).show();
+                progressBar.setVisibility(View.INVISIBLE);
+                buttonlogin.setVisibility(View.VISIBLE);
             }
         });
     }

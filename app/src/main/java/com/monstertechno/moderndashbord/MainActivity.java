@@ -14,7 +14,7 @@ import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
-ImageView imageViewlocation  ,  imageViewgenral   ,  imageViewalarm , imageViewNOTES;
+ImageView imageViewlocation  ,  imageViewgenral   ,  imageViewalarm , imageViewNOTES , imageViewVehicle;
 
     LinearLayout linearLayoutlocation;
 
@@ -32,9 +32,18 @@ ImageView imageViewlocation  ,  imageViewgenral   ,  imageViewalarm , imageViewN
         imageViewgenral=findViewById(R.id.genralbutton);
         imageViewalarm=findViewById(R.id.AlarmCard);
         imageViewNOTES=findViewById(R.id.notes);
-
+        imageViewVehicle=findViewById(R.id.Vehicleimage);
 
         linearLayoutlocation=findViewById(R.id.linearLayoutlocation);
+
+        //Enter to vehicle activity
+        imageViewVehicle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Vehicle_Activity.class);
+                startActivity(intent);
+            }
+        });
 
         //Enter to notes activity
         imageViewNOTES.setOnClickListener(new View.OnClickListener() {

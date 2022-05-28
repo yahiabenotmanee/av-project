@@ -30,8 +30,6 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     String Emailpattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
-
-
 TextView login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +46,9 @@ TextView login;
         edtpassword = findViewById(R.id.edtSignUpPassword);
         //edtpasswordconfirme = findViewById(R.id.edtSignUpConfirmPassword);
         //progressBar = findViewById(R.id.pr)
+
         // Initialize Firebase Auth
-//        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         ////////////////////////////////    status bar color    /////////////////////////////////////
         getWindow().setStatusBarColor(ContextCompat.getColor(RegisterActivity.this,R.color.theme_color));
@@ -63,8 +62,7 @@ TextView login;
                 txtedtEmal = edtEmal.getText().toString().trim();
                 txtedtMobil= edtMobil.getText().toString().trim();
                 txtpassword=edtpassword.getText().toString().trim();
-                txtpasswordconfirme=txtpassword;
-                        //edtpasswordconfirme.getText().toString().trim();
+
 
                 // check conditions
                 if (!TextUtils.isEmpty(txtedtFullname)){
@@ -73,19 +71,12 @@ TextView login;
                             if (!TextUtils.isEmpty(txtedtMobil)){
                                 if (txtedtMobil.length()==10){
                                     if (!TextUtils.isEmpty(txtpassword)){
-                                        if (!TextUtils.isEmpty(txtpasswordconfirme)){
-                                            if (txtpasswordconfirme.equals(txtpassword)){
-                                                // Call methode
-                                                //SignUpUser();
-
-                                                Intent intent =new Intent(RegisterActivity.this,MainActivity.class);
-                                                startActivity(intent);
-                                                finish();
-
-
-                                            }else{edtMobil.setError(" Password confirme and password should be not the same  !");}
-
-                                        }else{edtMobil.setError(" Password confirme can't be empty !");}
+                                        // Call methode
+                                        SignUpUser();
+//
+                                        Intent intent =new Intent(RegisterActivity.this,MainActivity.class);
+                                        startActivity(intent);
+                                        finish();
 
                                     }else{edtMobil.setError(" Password can't be empty !");}
 
@@ -111,26 +102,30 @@ TextView login;
             }
         });
     }
-
- //Siggnup user methode
-
+    //Siggnup user methode
     private void SignUpUser() {
         signtomain.setVisibility(View.INVISIBLE);
         mAuth.createUserWithEmailAndPassword(txtedtEmal,txtpassword).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                Toast.makeText(RegisterActivity.this, "Sign up Successful ", Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(RegisterActivity.this,MainActivity.class);
+                Toast.makeText(RegisterActivity.this, "SignUp successfuly ", Toast.LENGTH_SHORT).show();
+
+                Intent intent =new Intent(RegisterActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
+
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(RegisterActivity.this, "Error "+ e.getMessage(), Toast.LENGTH_SHORT).show();
-                signtomain.setVisibility(View.VISIBLE);
+                Toast.makeText(RegisterActivity.this, "Error"+e.getMessage(), Toast.LENGTH_SHORT).show();
+            signtomain.setVisibility(View.VISIBLE);
             }
         });
+
     }
+
+
+
 
 }
